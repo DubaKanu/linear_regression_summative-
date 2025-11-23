@@ -42,8 +42,8 @@ class _PredictionScreenState extends State<PredictionScreen> {
   String? _prediction;
   String? _error;
 
-  // API endpoint - replace with your deployed API URL
-  final String apiUrl = 'http://127.0.0.1:8000/predict_gdp_growth';
+  // API endpoint 
+  final String apiUrl = 'https://api-tyky.onrender.com/predict_gdp_growth';
 
   Future<void> _makePrediction() async {
     if (!_formKey.currentState!.validate()) return;
